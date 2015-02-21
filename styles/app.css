@@ -6,10 +6,15 @@
   height: 140px;
   margin-right: 20px;
 }
-
 .covered {
   background-image: url(/Users/HR10/Desktop/2015-02-blackjack/img/card-back.png);
+  background-size: contain;
 }
+
+.covered img {
+  visibility: hidden;
+}
+
 
 .hand {
   overflow: auto;

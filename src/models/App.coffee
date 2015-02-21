@@ -9,12 +9,16 @@ class window.App extends Backbone.Model
 
   # if this.collection.scores()[1] < this.collection.scores()[0]
 
+  # result: ->
+
+
   finishGame: ->
     dealer = @get 'dealerHand'
     player = @get 'playerHand'
     dealer.models[0].flip()
-    console.log(dealer.scores()[2] < player.scores()[2])
+    # console.log(dealer.scores()[2] < player.scores()[2])
     while dealer.scores()[2] < player.scores()[2] && dealer.scores()[3] < player.scores()[2]
       break if dealer.scores()[3] > 17
       dealer.hit()
+
 
